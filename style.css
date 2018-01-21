@@ -1,0 +1,290 @@
+/*----------------------------------BASE----------------------------------*/
+*, *:before, *:after {box-sizing: border-box; margin: 0;}
+
+h1, h2, h3 {
+	font-family: 'Montserrat', sans-serif;			
+}
+p, a, input {
+	font-family: 'Roboto Mono', monospace;
+	text-decoration: none;
+	color: black;
+	margin-bottom: 1em;
+	}
+body {
+/*	background-color: #f9f8f5;
+*/}
+
+
+/*-------------------------------SIDE PANEL-------------------------------*/
+#side-panel {
+	width: 25vw;
+	height: 100vh;
+	position: fixed;
+}
+#logo {
+	font-size: 1.91vw;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: -0.03em;
+	margin-left: 3.8vw;
+	margin-right: 3.8vw;
+	margin-top: 3vw;
+	margin-bottom: 2.5vw;
+	border: 0.3vw solid black;
+}
+#logo:hover {
+	background-color: black;
+	color: white;
+}
+
+.menu {
+	padding: 0 4vw;
+}
+.menu > a {
+	font-size: 0.813em;
+	display: block;
+}
+.menu > a:hover {
+	transition: 0.08s ease-in-out;
+	opacity: 0.4;
+}
+.menu > p, a {
+	margin-bottom: 1.2em;
+}
+.menutitle {
+	font-weight: bolder;
+}
+.menu-project {
+	padding: 0 2em;
+}
+.social-icons {
+	display: inline-block !important;
+	margin-bottom: 1em;
+	margin-top: 1.5em;
+	margin-right: 0.5em;
+}
+.menu-mail {
+	width: 100%;
+	border: solid 2px black;
+	text-align: center;
+	font-size: 0.813em;
+	font-weight: bolder;
+	line-height: 2em;
+}
+
+/*-------------------------------MAIN PANEL-------------------------------*/
+#main-panel {
+	width: 75vw; 
+	height: auto;
+	display: block;
+	position: absolute;
+	right: 0;
+	overflow: auto;
+	clear: both;
+}
+#footer {
+	clear: both;
+	width: 75vw; 
+	height: auto;
+	bottom: 0;
+}
+.credits {
+	padding: 3em 2em 1em 0;
+	text-align: center;
+	font-size: 0.75em;
+	opacity: 0.15;
+}
+/*------------------------------GALERIA HOME------------------------------*/
+.project-thumb {
+	width: 37.5vw;
+	height: 37.5vw;
+	float: left;
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+.project-thumb::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.project-thumb:hover > .project-info{
+	opacity: 1;
+	transition: 0.2s ease-in-out;
+}
+.project-info {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	height: 100%;
+	color: white;
+	text-align: center;
+}
+.project-info > p {
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	width: 100%;
+	color: white;
+	padding: 2vw;
+}
+.info_title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5vw;
+	font-style: normal;
+	font-weight: 700;
+	opacity: 1; 
+}
+.info_category {
+	font-size: 1.3vw;
+	line-height: 1.8em;
+	font-weight: 300;
+	font-style: italic;
+	opacity: 0.7;
+}
+
+#principia {background-image: url(static/cover/principia-cv.jpg);}
+#youth {background-image: url(static/cover/youth-cv.png);}
+#owc {background-image: url(static/cover/owc-cv.png);}
+#obl {background-image: url(static/cover/obl-cv.png);}
+#rh2k {background-image: url(static/cover/rh2k-cv.png);}
+#erecom {background-image: url(static/cover/erecom-cv.png);}
+#cobrecos {background-image: url(static/cover/cobrecos-cv.png);}
+#ilustra {background-image: url(static/cover/ilustra-cv.png);}
+#sindicato {background-image: url(static/cover/sindicato-cv.png);}
+#adaga {background-image: url(static/cover/adaga-cv.png);}
+
+/*------------------------------PROJECT PAGE------------------------------*/
+
+.title {
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 6.25vw;
+	margin-bottom: 6.25vw;
+	margin-left: 18.75vw;
+	margin-right: 18.75vw;
+	text-decoration: underline;
+}
+.text {
+	line-height: 1.56em;
+	margin: 0 18.75vw;
+	margin-bottom: 6.25vw;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+.side-text {
+	display: inline-block;
+	vertical-align: top;
+	width: 18.75vw;
+	margin: 0 0 6.25vw 0;
+}
+.bold {
+	font-weight: bolder;
+}
+.italic {
+	font-style: italic;
+}
+.main-img {
+	width: 62.5vw;
+	margin-left: 6.25vw;
+	margin-right: 6.25vw;
+	margin-bottom: 6.25vw;
+}
+.full-img {
+	width: 75vw;
+	margin-bottom: 6.25vw;
+}
+.big-left-img {
+	width: 56.25vw;
+	margin-bottom: 6.25vw;
+}
+.side-right-img {
+	position: absolute;
+	border: 15px solid white;
+	right:0;
+}
+
+
+/*-------------------------------ABOUT PAGE-------------------------------*/
+.about-text {
+	margin-bottom: 2em;
+}
+#avatar-container{
+	width: 29vw;
+	margin: auto;
+	margin-bottom: 4em;
+}
+#box {
+	width: 25vw;
+	height: 20vw;
+	border: 8px solid black;
+	position: absolute;
+}
+#avatar-img {
+	position: relative;
+	width: 25vw;
+	margin-left: 4vw;
+	margin-top: 2vw;
+	border: 8px solid white;
+}
+/*------------------------------CONTACT PAGE------------------------------*/
+.contact-container {
+	margin-left: 18.75vw;
+	margin-right: 18.75vw;
+}
+.contact-text {
+	margin-bottom: 1.8em;
+}
+
+input[type=text], textarea {
+    font-size: 0.875em;
+    color: black;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=text]::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-style: italic;
+	opacity: 0.5;
+}
+input[type=text]::-moz-placeholder, textarea::-moz-placeholder { /* Firefox 19+ */
+	font-style: italic;
+	opacity: 0.5;
+}
+input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder { /* IE 10+ */
+	font-style: italic;
+	opacity: 0.5;
+}
+input[type=text]:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+	font-style: italic;
+	opacity: 0.5;
+}
+input[type=text]:focus, textarea:focus {
+	outline-width: 3px;
+	outline-style: solid;
+	outline-color: black;
+}
+
+input[type=submit] {
+	font-size: 0.875em;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 12px 20px;
+    cursor: pointer;
+    float: right;
+    box-sizing: border-box;
+}
+input[type=submit]:hover {
+    
+    background-color: black;
+    color: white;
+}
+
