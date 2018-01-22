@@ -20,6 +20,7 @@ body {
 	width: 25vw;
 	height: 100vh;
 	position: fixed;
+	overflow: auto;
 }
 #logo {
 	font-size: 1.91vw;
@@ -40,8 +41,8 @@ body {
 .menu {
 	padding: 0 4vw;
 }
-.menu > a {
-	font-size: 0.813em;
+.menu-item {
+	font-size: 0.875em;
 	display: block;
 }
 .menu > a:hover {
@@ -51,10 +52,8 @@ body {
 .menu > p, a {
 	margin-bottom: 1.2em;
 }
-.menutitle {
-	font-weight: bolder;
-}
 .menu-project {
+	font-size: 0.750em;
 	padding: 0 2em;
 }
 .social-icons {
@@ -70,6 +69,7 @@ body {
 	font-size: 0.813em;
 	font-weight: bolder;
 	line-height: 2em;
+	margin-bottom: 2em;
 }
 
 /*-------------------------------MAIN PANEL-------------------------------*/
@@ -94,6 +94,8 @@ body {
 	font-size: 0.75em;
 	opacity: 0.15;
 }
+
+
 /*------------------------------GALERIA HOME------------------------------*/
 .project-thumb {
 	width: 37.5vw;
