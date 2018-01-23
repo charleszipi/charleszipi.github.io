@@ -107,6 +107,7 @@ body {
 	.info_category {
 		font-size: 3.8vw;
 	}
+
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
 	#main-panel {
@@ -144,6 +145,9 @@ body {
 	.menu {
 		display: none;
 	}
+	.full-img {
+		width: 100vw;
+	}
 }
 @media only screen and (min-width: 900px) {
 	#main-panel {
@@ -170,7 +174,10 @@ body {
 	margin-top: 3vw;
 	margin-bottom: 2.5vw;
 	border: 0.3vw solid black;
-}
+	}
+	.full-img {
+		width: 75vw;
+	}
 }
 /*------------------------------GALERIA HOME------------------------------*/
 .project-thumb {
@@ -269,7 +276,6 @@ body {
 	margin-bottom: 6.25vw;
 }
 .full-img {
-	width: 75vw;
 	margin-bottom: 6.25vw;
 }
 .big-left-img {
