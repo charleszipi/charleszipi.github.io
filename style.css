@@ -17,27 +17,20 @@ body {
 
 /*-------------------------------SIDE PANEL-------------------------------*/
 #side-panel {
-	width: 25vw;
-	height: 100vh;
 	position: fixed;
 	overflow: auto;
+	z-index: 1;
 }
 #logo {
-	font-size: 1.91vw;
 	font-weight: 700;
 	text-align: center;
 	letter-spacing: -0.03em;
-	margin-left: 3.8vw;
-	margin-right: 3.8vw;
-	margin-top: 3vw;
-	margin-bottom: 2.5vw;
-	border: 0.3vw solid black;
+	background-color: white;
 }
 #logo:hover {
 	background-color: black;
 	color: white;
 }
-
 .menu {
 	padding: 0 4vw;
 }
@@ -57,7 +50,7 @@ body {
 	padding: 0 2em;
 }
 .social-icons {
-	display: inline-block !important;
+	display: inline-block;
 	margin-bottom: 1em;
 	margin-top: 1.5em;
 	margin-right: 0.5em;
@@ -74,7 +67,6 @@ body {
 
 /*-------------------------------MAIN PANEL-------------------------------*/
 #main-panel {
-	width: 75vw; 
 	height: auto;
 	display: block;
 	position: absolute;
@@ -84,7 +76,6 @@ body {
 }
 #footer {
 	clear: both;
-	width: 75vw; 
 	height: auto;
 	bottom: 0;
 }
@@ -94,12 +85,95 @@ body {
 	font-size: 0.75em;
 	opacity: 0.15;
 }
+@media only screen and (max-width: 599px) {
+	#main-panel {
+		margin-top: 23.55vw;
+	}
+	.project-thumb {
+		width: 100vw;
+		height: 100vw;
+	}
+	#logo {
+		font-size: 7.64vw;
+		margin-left: 15.2vw;
+		margin-right: 15.2vw;
+		margin-top: 6vw;
+		margin-bottom: 6vw;
+		border: 1.2vw solid black;
+	}
+	.info_title {
+		font-size: 6.8vw;
+	}
+	.info_category {
+		font-size: 3.8vw;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+	#main-panel {
+		margin-top: 11.88vw;
+	}
+	.project-thumb {
+		width: 50vw;
+		height: 50vw;
+	}
+	#logo {
+		font-size: 3.82vw;
+		margin-left: 32.6vw;
+		margin-right: 32.6vw;
+		margin-top: 3vw;
+		margin-bottom: 3vw;
+		border: 0.6vw solid black;
+	}
+	.info_title {
+		font-size: 3.5vw;
+	}
+	.info_category {
+		font-size: 2vw;
+	}
+}
 
+@media only screen and (max-width: 899px) {
+	#main-panel {
+		width: 100vw;
+	}
 
+	#side-panel {
+		width: 100vw;
+		height: auto;
+	}
+	.menu {
+		display: none;
+	}
+}
+@media only screen and (min-width: 900px) {
+	#main-panel {
+		width: 75vw;
+	}
+	.project-thumb {
+		width: 37.5vw;
+		height: 37.5vw;
+	}
+	.info_title {
+		font-size: 2.5vw;
+	}
+	.info_category {
+		font-size: 1.3vw;
+	}
+	#side-panel {
+		width: 25vw;
+		height: 100vh;
+	}
+	#logo {
+	font-size: 1.91vw;
+	margin-left: 3.8vw;
+	margin-right: 3.8vw;
+	margin-top: 3vw;
+	margin-bottom: 2.5vw;
+	border: 0.3vw solid black;
+}
+}
 /*------------------------------GALERIA HOME------------------------------*/
 .project-thumb {
-	width: 37.5vw;
-	height: 37.5vw;
 	float: left;
 	position: relative;
 	background-position: center center;
@@ -134,13 +208,11 @@ body {
 }
 .info_title {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 2.5vw;
 	font-style: normal;
 	font-weight: 700;
 	opacity: 1; 
 }
 .info_category {
-	font-size: 1.3vw;
 	line-height: 1.8em;
 	font-weight: 300;
 	font-style: italic;
