@@ -85,6 +85,8 @@ body {
 	font-size: 0.75em;
 	opacity: 0.15;
 }
+
+/*-----------------------------MEDIA QUERIES-----------------------------*/
 @media only screen and (max-width: 599px) {
 	#main-panel {
 		margin-top: 23.55vw;
@@ -107,7 +109,16 @@ body {
 	.info_category {
 		font-size: 3.8vw;
 	}
-
+	.side-right-img {
+		border: 7px solid white;
+	}
+	.text {
+		margin: 0 8.33vw;
+	}
+	.title {
+		margin-left: 8.33vw;
+		margin-right: 8.33vw;
+	}
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
 	#main-panel {
@@ -131,6 +142,32 @@ body {
 	.info_category {
 		font-size: 2vw;
 	}
+	.side-right-img {
+		border: 10px solid white;
+	}
+	#owc-side {
+		width: 58.33vw;
+		display: inline-block;
+		margin-right: 0;
+		padding-right: 15px;
+	}
+	.title {
+		margin-left: 16.66vw;
+		margin-right: 16.66vw;
+	}
+	.text {
+		margin: 0 16.66vw;
+	}
+	.side-text {
+		display: inline-block;
+		vertical-align: top;
+		width: 25vw;
+		margin: 0 0 8.33vw 0 !important;
+	}
+	#pd-text {
+		margin-left: 8.33vw !important;
+		margin-right: 41.66vw !important;
+	}
 }
 
 @media only screen and (max-width: 899px) {
@@ -147,6 +184,35 @@ body {
 	}
 	.full-img {
 		width: 100vw;
+	}
+	.main-img {
+		width: 83.33vw;
+		margin-left: 8.33vw;
+		margin-right: 8.33vw;
+	}
+	.big-left-img {
+		width: 75vw;
+	}
+	#pd-side {
+		width: 41.66vw;
+		margin-right: 0;
+		border-right: 0;
+	}
+	#cobrecos-side {
+		width: 33.33vw;
+		margin-right: 8.33vw;
+		margin-top: 7vw;
+	}
+	#ilustra-center {
+		width: 66.66vw;
+		margin-right: 16.6vw;
+		margin-left: 16.6vw;
+	}
+	#sindicato-side {
+		width: 41.66vw;
+		margin-right: 0;
+		margin-top: 10vw;
+		border-right: 0;
 	}
 }
 @media only screen and (min-width: 900px) {
@@ -168,17 +234,73 @@ body {
 		height: 100vh;
 	}
 	#logo {
-	font-size: 1.91vw;
-	margin-left: 3.8vw;
-	margin-right: 3.8vw;
-	margin-top: 3vw;
-	margin-bottom: 2.5vw;
-	border: 0.3vw solid black;
+		font-size: 1.91vw;
+		margin-left: 3.8vw;
+		margin-right: 3.8vw;
+		margin-top: 3vw;
+		margin-bottom: 2.5vw;
+		border: 0.3vw solid black;
 	}
 	.full-img {
 		width: 75vw;
 	}
+	.main-img {
+		width: 62.5vw;
+		margin-left: 6.25vw;
+		margin-right: 6.25vw;
+	}
+	.big-left-img {
+		width: 56.25vw;
+	}
+	.side-right-img {
+		border: 15px solid white;
+	}
+	#pd-side {
+		width: 31.25vw;
+		margin-right: 0;
+		border-right: 0;
+	}
+	#owc-side {
+		width: 43.75vw;
+		display: inline-block;
+		margin-right: 0;
+		padding-right: 15px;
+	}
+	#cobrecos-side {
+		width: 25vw;
+		margin-right: 6.25vw;
+		margin-top: 7vw;
+	}
+	#ilustra-center {
+		width: 50vw;
+		margin-right: 12.5vw;
+		margin-left: 12.5vw;
+	}
+	#sindicato-side {
+		width: 31.25vw;
+		margin-right: 0;
+		margin-top: 10vw;
+		border-right: 0;
+	}
+	.title {
+		margin-left: 18.75vw;
+		margin-right: 18.75vw;
+	}
+	.text {
+		margin: 0 18.75vw;
+	}
+	.side-text {
+		display: inline-block;
+		vertical-align: top;
+		width: 18.75vw;
+		margin: 0 0 6.25vw 0 !important;
+	}
+	#pd-text {
+		margin-left: 6.25vw !important;
+		margin-right: 31.25vw !important;
+	}
 }
+
 /*------------------------------GALERIA HOME------------------------------*/
 .project-thumb {
 	float: left;
@@ -244,24 +366,15 @@ body {
 	text-align: center;
 	margin-top: 6.25vw;
 	margin-bottom: 6.25vw;
-	margin-left: 18.75vw;
-	margin-right: 18.75vw;
 	text-decoration: underline;
 }
 .text {
 	line-height: 1.56em;
-	margin: 0 18.75vw;
 	margin-bottom: 6.25vw;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
-}
-.side-text {
-	display: inline-block;
-	vertical-align: top;
-	width: 18.75vw;
-	margin: 0 0 6.25vw 0;
 }
 .bold {
 	font-weight: bolder;
@@ -270,24 +383,18 @@ body {
 	font-style: italic;
 }
 .main-img {
-	width: 62.5vw;
-	margin-left: 6.25vw;
-	margin-right: 6.25vw;
 	margin-bottom: 6.25vw;
 }
 .full-img {
 	margin-bottom: 6.25vw;
 }
 .big-left-img {
-	width: 56.25vw;
 	margin-bottom: 6.25vw;
 }
 .side-right-img {
 	position: absolute;
-	border: 15px solid white;
 	right:0;
 }
-
 
 /*-------------------------------ABOUT PAGE-------------------------------*/
 .about-text {
