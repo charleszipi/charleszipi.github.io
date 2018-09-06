@@ -14,8 +14,8 @@
 	<div id="side-panel">
 		<a href="index.html"><h3 id="logo">charles l'astorina</h3></a>
 		<div class="menu">
-			<a class="menu-item" href="about.html">_Sobre Mim</a>
-			<a class="menu-item" href="contato.html">_Contato</a>
+<!-- 			<a class="menu-item" href="about.html">_Sobre Mim</a>
+			<a class="menu-item" href="contato.html">_Contato</a> -->
 
 			<a class="menu-item" href="index.html">_Projetos</a>
 
@@ -105,5 +105,12 @@
 			<p class="credits">site desenvolvido por Charles L'Astorina</p>
 		</div>
 	</div>
-
 </body>
+<script>
+	(function() {
+	    $('.toggle-wrap').on('click', function() {
+	        $(this).toggleClass('active');
+	        $('aside').animate({width: 'toggle'}, 200);
+	    });
+	})();
+</script>
