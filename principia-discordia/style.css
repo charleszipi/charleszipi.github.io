@@ -1,0 +1,103 @@
+body {
+    background-color: #FFFAF5;
+    color: #3c3003;
+    font-family: 'Noticia Text', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
+.chapter-title {
+    font-size: 3.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: right;
+}
+.paragraph {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    margin-block-start: 3.5rem;
+    margin-block-end: 3.5rem;
+}
+.citation {
+    font-style: italic;
+}
+.long {
+    padding-left: 4rem;
+}
+
+.short {
+    margin-inline-start: -5rem;
+    margin-inline-end: -5rem;
+    font-size: 1.875rem;
+    line-height: 2.75rem;
+    color: #EACE76;
+}
+
+#side-menu {
+    position: fixed;
+}
+
+.book-logo {
+    padding: 2rem 0;
+}
+.line {
+    position: absolute;
+    border-right: 2px solid #3c3003;
+    height: 100%;
+    margin: .625rem 0;
+    width: calc(11px + .625rem + 1px);
+    opacity: .4;
+    z-index: -5;
+}
+.sumary-item {
+    padding-left: 11px;
+    height: 2.5rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+
+    opacity: 0.4;
+
+    cursor: pointer;
+}
+.sumary-item:hover {
+    opacity: 1;
+}
+.gold {
+    color: #EACE76;
+    opacity: 1;
+}
+.gold > .sumary-item-dot {
+    background-color: #EACE76;
+}
+.sumary-item-dot {
+    display: inline-block;
+    background-color: #3c3003;
+}
+.chapter-dot {
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: .625rem;
+}
+.sub-chapter-dot {
+    height: 1rem;
+    width: 1rem;
+    margin: .125rem;
+    border-radius: .5rem;
+}
+
+.sumary-item-title {
+    display: inline-block;
+    margin: 0;
+    padding-left: 1rem;
+    vertical-align: top;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: .75rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+}
+
+.sub-chapter-title {
+    text-transform: none;
+}
