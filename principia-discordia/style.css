@@ -36,46 +36,59 @@ h1, h2, h3, h4, h5, h6 {
 
 #side-menu {
     position: fixed;
+    width: 100%;
+    max-width: inherit;
 }
 
 .book-logo {
     padding: 2rem 0;
 }
+
+.sumary {
+    opacity: 0.4;
+    transition: ease-in 0.2s;
+}
+.sumary:hover {
+    opacity: 0.8;
+}
+
 .line {
     position: absolute;
-    border-right: 2px solid #AFAC9F;
+    border-right: 2px solid #3c3003;
     height: calc(100% - 147px);
     margin: .625rem 0;
-    width: calc(11px + .625rem + 1px);
+    width: calc(11px + .313rem + 1px);
     z-index: -5;
 }
 .sumary-item {
     padding-left: 11px;
     height: 2.5rem;
-    padding-top: .625rem;
-    padding-bottom: .625rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     cursor: pointer;
 }
 .sumary-item:hover > .sumary-item-title {
-    color: #3c3003;
+    color: #EACE76;
 }
 .sumary-item:hover > .sumary-item-dot {
-    background-color: #3c3003;
+    background-color: #EACE76;
 }
 .sumary-item-dot {
     display: inline-block;
-    background-color: #AFAC9F;
+    background-color: #3c3003;
+    outline: 6px solid #FFFAF5;
+    border-radius: 50%;
 }
 .chapter-dot {
-    height: 1.25rem;
-    width: 1.25rem;
-    border-radius: .625rem;
+    height: .625rem;
+    width: .625rem;
+    margin: 0.438rem 0;
 }
 .sub-chapter-dot {
-    height: 1rem;
-    width: 1rem;
-    margin: .125rem;
-    border-radius: .5rem;
+    height: .25rem;
+    width: .25rem;
+    margin: .625rem .188rem;
+    
 }
 
 .sumary-item-title {
@@ -84,21 +97,23 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 1rem;
     vertical-align: top;
 
-    font-family: 'Rubik', sans-serif;
-    font-size: .75rem;
-    line-height: 1.25rem;
-    text-transform: uppercase;
+    /* font-family: 'Rubik', sans-serif; */
+    font-size: .875rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    /* text-transform: uppercase; */
 
-    color: #AFAC9F;
+    color: #3c3003;
 }
 
 .sub-chapter-title {
     text-transform: none;
+    padding-left: 2rem;
 }
-.gold {
+/* .gold {
     color: #EACE76;
     opacity: 1;
 }
 .gold > .sumary-item-dot {
     background-color: #EACE76;
-}
+} */
